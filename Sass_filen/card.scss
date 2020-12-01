@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@media (max-width: 500px) {
-  .container-item {
-    display: block;
-    flex-wrap: wrap;
-  }
-}
-
 .card {
   display: flex;
   flex-wrap: nowrap;
@@ -20,10 +7,9 @@
   max-width: 50em;
   margin: auto;
   text-align: center;
-}
-
-.card:hover {
-  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .container-item {
@@ -36,6 +22,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .container-item {
+    display: block;
+    flex-wrap: wrap;
+  }
 }
 
 .card-img {
