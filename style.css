@@ -52,3 +52,48 @@ img:hover {
 article button {
   align-self: flex-end;
 }
+
+/* Här börjar footer */
+#footer {
+  background: rgba(67, 90, 51, 0.822); 
+  margin-top: 1rem;
+  height: 100%;
+  padding-top:100px;
+  padding-bottom: 10px;
+  border-top: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+   
+  .footer-social{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .social i{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .footer-a-li a{
+    text-decoration: none; 
+    color: black; 
+  }
+
+  .footer-bottom{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+    
+    
+   
+  
+ 
+  
