@@ -1,0 +1,24 @@
+{
+  "name": "Grupp-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-sass scss/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamieHurtig/Grupp-one.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamieHurtig/Grupp-one/issues"
+  },
+  "homepage": "https://github.com/KamieHurtig/Grupp-one#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {}
+}
