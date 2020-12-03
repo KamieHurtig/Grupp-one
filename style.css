@@ -29,21 +29,28 @@
 
     #nav-bar {
       width: 60vw;
-      height: 47px;
+      height: 53px;
       list-style-type: none;
       background-color: #e7e7e7;
+      border-radius: 25px;
     }
     
     li {
+      border-radius: 25px;
       list-style-type: none;
       float: left;
+      margin: 3px;
     }
     
     li:last-child {
       border-right: none;
+      border-radius: 25px;
+
     }
     
     li a {
+      border-radius: 25px;
+
       display: block;
       color: rgb(77, 77, 77);
       text-align: center;
@@ -52,10 +59,14 @@
     }
     
     li a:hover:not(.active) {
+      border-radius: 25px;
+
       background-color: rgb(199, 199, 199);
     }
     
     .active {
+      border-radius: 25px;
+
       background-color: #bbd4bc;
     }      
 
