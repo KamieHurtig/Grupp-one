@@ -1,7 +1,7 @@
 {
   "name": "Grupp-one",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a group project for the course Frontend development, the basic idea is to learn how to make a shopping cart. Our idea is to sell christmas decoration.",
   "main": "main.js",
   "scripts": {
     "start": "node-sass scss/main.scss style.css -w"
