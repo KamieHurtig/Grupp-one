@@ -1,24 +1,25 @@
 
-    /* Början av min navbar /sandra */
+    /* Början av navbar /sandra */
 
     header {
-      border:1px solid rgb(243, 27, 27);
+      *border:1px solid rgb(243, 27, 27);
       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.637),  rgb(255, 255, 255)),
       url("Bilder/nice-christmas-packages-white-table.jpg");
       background-size: 100%;
-      padding-top: 350px;
+      padding-top: 25vw;
       margin-bottom: 100px;
       background-repeat: no-repeat;
       display: flex;
       justify-content: center;
+      height: 45vw;
     }
 
     h2 {
-      border:1px solid darkgrey;
+      *border:1px solid darkgrey;
       margin-bottom:40px;
       text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 4rem;
+      font-family: 'Dancing Script', cursive;      
+      font-size: 9vw;
     }
 
     nav {
@@ -26,15 +27,14 @@
     }
 
     #nav-bar {
-      border:1px solid rgb(29, 158, 36);
-      width: 700px;
+      *border:1px solid rgb(29, 158, 36);
+      width: 60vw;
       height: 50px;
       list-style-type: none;
     }
     
     li {
       list-style-type: none;
-      border-bottom:darkgrey;
       float: left;
     }
     
@@ -58,7 +58,7 @@
       background-color: #bbd4bc;
     }      
 
-  /* slutet av min navbar */
+  /* slutet av navbar */
 
   
 .card {
