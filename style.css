@@ -9,11 +9,12 @@
 }
 
 .card {
+  font-family: "Open Sans", sans-serif;
   display: grid;
   grid-template-areas: "card1 card2 card3 card4";
   justify-content: space-around;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   transition: 0.1s;
 }
 
@@ -43,6 +44,11 @@
   align-items: center;
 }
 
+.title {
+  color: #2d8ac0;
+  font-weight: bold;
+}
+
 .card-img {
   height: 10rem;
   width: 10rem;
@@ -52,7 +58,7 @@
   width: 10vw;
 }
 
-article button {
+.buy-btn {
   align-self: flex-end;
   background-color: #2ea44f;
   color: white;
@@ -61,7 +67,7 @@ article button {
   border-radius: 5px;
   font-weight: bold;
 }
-article button:hover {
+.buy-btn:hover {
   background-color: #004d00;
   color: black;
 }
@@ -75,6 +81,7 @@ article button:hover {
   .card {
     display: grid;
     grid-template-areas: "card1" "card2" "card3" "card4";
+    grid-gap: 10px;
   }
 }
 * {
