@@ -1,17 +1,35 @@
-@media (max-width: 500px) {
-  .container-item {
-    display: block;
-    flex-wrap: wrap; } }
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cecece;
+  display: flex;
+  justify-content: center;
+}
 
     /* Början av min navbar /sandra */
 
-    
+    h2 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 40px;
+      padding-bottom:100px;
+    }
+    nav {
+      background-image: url("Bilder/nice-christmas-packages-white-table.jpg");
+      background-size: 100%;
+      padding-top: 400px;
+      margin-bottom: 100px;
+      background-repeat: none;
+    }
+
     #nav-bar {
       width: 500px;
       list-style-type: none;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      z-index: 1;
     }
     
     li {
@@ -44,45 +62,86 @@
 
   
 .card {
-  display: flex;
-  flex-wrap: nowrap;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-areas: "card1 card2 card3 card4";
   justify-content: space-around;
-  transition: 0.3s;
-  max-width: 50em;
-  margin: auto;
-  text-align: center; }
+  text-align: center;
+  padding: 15px;
+  transition: 0.1s;
+}
+
+#item1 {
+  grid-area: card1;
+}
+
+#item2 {
+  grid-area: card2;
+}
+
+#item3 {
+  grid-area: card3;
+}
+
+#item4 {
+  grid-area: card4;
+}
 
 .card:hover {
-  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2);
+}
 
 .container-item {
   border: 1px solid white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  width: 30%;
-  margin: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+}
+
+.title {
+  color: #2d8ac0;
+  font-weight: bold;
+}
 
 .card-img {
   height: 10rem;
-  width: 10rem; }
-
-img:hover {
-  transform: scale(1.2, 1.2); }
+  width: 10rem;
+}
 
 .card-p {
-  width: 10vw; }
+  width: 10vw;
+}
 
-article button {
-  align-self: flex-end; }
+.buy-btn {
+  align-self: flex-end;
+  background-color: #2ea44f;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.buy-btn:hover {
+  background-color: #004d00;
+  color: black;
+}
 
+.pris {
+  color: #c5004a;
+  text-align: left;
+}
+
+@media (max-width: 780px) {
+  .card {
+    display: grid;
+    grid-template-areas: "card1" "card2" "card3" "card4";
+    grid-gap: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 #footer {
   background: rgba(67, 90, 51, 0.822);
@@ -94,25 +153,32 @@ article button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
 .footer-social {
   position: relative;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .social i {
   padding-right: 10px;
   padding-left: 10px;
   font-size: 50px;
-  color: #fff; }
+  color: #fff;
+}
 
 .footer-a-li a {
   text-decoration: none;
-  color: black; }
+  color: black;
+}
 
 .footer-bottom {
   background-color: black;
   color: white;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
