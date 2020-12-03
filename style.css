@@ -3,6 +3,46 @@
     display: block;
     flex-wrap: wrap; } }
 
+    /* Början av min navbar /sandra */
+
+    
+    #nav-bar {
+      width: 500px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    li {
+      list-style-type: none;
+      border-bottom:darkgrey;
+      float: left;
+    }
+    
+    li:last-child {
+      border-right: none;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(77, 77, 77);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: rgb(199, 199, 199);
+    }
+    
+    .active {
+      background-color: #bbd4bc;
+    }      
+
+  /* slutet av min navbar */
+
+  
 .card {
   display: flex;
   flex-wrap: nowrap;
