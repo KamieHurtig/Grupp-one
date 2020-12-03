@@ -14,12 +14,13 @@
       height: 45vw;
     }
 
-    h2 {
+    h1 {
       *border:1px solid darkgrey;
       margin-bottom:40px;
       text-align: center;
       font-family: 'Dancing Script', cursive;      
       font-size: 9vw;
+      color: #364936;
     }
 
     nav {
@@ -27,10 +28,10 @@
     }
 
     #nav-bar {
-      *border:1px solid rgb(29, 158, 36);
       width: 60vw;
-      height: 50px;
+      height: 47px;
       list-style-type: none;
+      background-color: #e7e7e7;
     }
     
     li {
