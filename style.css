@@ -66,11 +66,49 @@
     
     .active {
       border-radius: 25px;
-
       background-color: #bbd4bc;
     }      
 
   /* slutet av navbar */
+
+  /* början av "om oss" artikeln */
+
+.omoss-container {
+  *border: 1px solid rgb(209, 26, 26);
+  margin-bottom: 150px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.omoss {
+  *border: 1px solid rgb(209, 26, 26);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bild {
+  *border: 1px solid green;
+  width: 150px;
+}
+
+.title {
+  *border: 1px solid rgb(209, 114, 26);
+  font-family: 'Dancing Script', cursive;
+  padding-bottom:20px;
+}
+
+.gruppett {
+  *border: 1px solid rgb(60, 26, 209);
+  width: 400px;
+  padding:20px;
+}
+
+
+
+  /* slutet av "om oss" artikeln */
 
   
 .card {
