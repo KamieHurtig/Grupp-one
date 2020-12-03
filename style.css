@@ -3,7 +3,7 @@
 
     header {
       *border:1px solid rgb(243, 27, 27);
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.637),  rgb(255, 255, 255)),
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945),  rgb(255, 255, 255)),
       url("Bilder/nice-christmas-packages-white-table.jpg");
       background-size: 100%;
       padding-top: 25vw;
@@ -29,7 +29,7 @@
 
     #nav-bar {
       width: 60vw;
-      height: 53px;
+      height: 52px;
       list-style-type: none;
       background-color: #e7e7e7;
       border-radius: 25px;
