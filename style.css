@@ -3,16 +3,19 @@
 
     header {
       border:1px solid rgb(243, 27, 27);
-      background-image: url("Bilder/nice-christmas-packages-white-table.jpg");
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.637),  rgb(255, 255, 255)),
+      url("Bilder/nice-christmas-packages-white-table.jpg");
       background-size: 100%;
-      padding-top: 400px;
+      padding-top: 350px;
       margin-bottom: 100px;
       background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
     }
 
     h2 {
       border:1px solid darkgrey;
-      margin-bottom:20px;
+      margin-bottom:40px;
       text-align: center;
       font-family: 'Courier New', Courier, monospace;
       font-size: 4rem;
@@ -27,7 +30,6 @@
       width: 700px;
       height: 50px;
       list-style-type: none;
-      z-index: 1;
     }
     
     li {
