@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hem</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Här börjar header -->
 <header>
-    <div class="overlay"></div>
-    <nav class="nav-bar">
-        <h2>SHOP</h2>
-        <ul>
-            <li> <a href="#">HOME</a></li>
-            <li> <a href="#">ABOUT</a></li>
-            <li class="cart">
+    <nav>
+        <h1>Julpynt.se</h1>
+        <ul id="nav-bar">
+            <li class="active"> <a href="index.html">HEM</a></li>
+            <li> <a href="omoss.html">OM OSS</a></li>
+            <li style="float:right">
                 <a href="cart.html"> 
-                <i class="fas fa-shopping-basket"></i> CART <span>0</span>
+                <i class="fas fa-shopping-basket"></i> VARUKORG  <span>( 0 )</span>
                 
                </a>       
             </li>
@@ -28,74 +32,52 @@
     </nav>
 </header>
 
-    <!-- Här startar cart -->
-    <main>
-        <section class="card">
-        <article class="container-item" id="item1">
-    
-            <h1>
-                Julgran
-            </h1>
-            <p class="card-p">
+<!-- Här Börjar Card -->
+<!-- Card 1 -->
+<section class="card">
+    <article class="container-item" id="item1">
+        <img class="card-img" src="./Bilder/julgran.jpg" alt="Julgran bild">
+        <h2 class="title"> Julgran </h2>
+        <p class="card-p">
                 Granen är ett måste inom juldekoration! Den är en av de mest kända och populära träds-sorterna. Välj mellan olika storlekar och pynta sedan efter egen smak!
-            </p>
-            <figure>
-                <img class="card-img" src="./Bilder/julgran.jpg" alt="en bild på thaimat">
-                <figcaption> från 150 kr </figcaption>
+        </p>
+        <h2 class="pris"> från 150 kr </pris>
             </figure>
     
-            <button>Köp</button>
+            <button class="buy-btn">Köp</button>
         </article>
-    
-        <article class="container-item" id="item2">
-    
-            <h1>
-                Julstjärna
-            </h1>
-            <p class="card-p">
+<!-- Card 2 -->  
+    <article class="container-item" id="item2">
+        <img class="card-img" src="Bilder/star.jpg" alt="Julstjärna bild">
+        <h2 class="title">Julstjärna</h2>
+        <p class="card-p">
                 En fantastisk vacker julstärna. Hängande pappstjärna i grå/vitt mönster. Stor modell med en diameter på 75cm.
-            </p>
-            <figure>
-                <img class="card-img" src="Bilder/star.jpg" alt="en bild på thaimat">
-                <figcaption> 50 kr </figcaption>
-            </figure>
-    
-            <button>Köp</button>
-        </article>
-    
-        <article class="container-item" id="item3">
-    
-            <h1>
-                Julkrans
-            </h1>
-            <p class="card-p">
+        </p>
+        <h2 class="pris">50kr</h2>
+        <button class="buy-btn">Köp</button>
+    </article>
+<!-- Card 3 -->
+    <article class="container-item" id="item3">
+        <img class="card-img" src="Bilder/julkrans.jpg" alt="bild på julig julkrans">
+        <h2 class="title">Julkrans</h2>
+        <p class="card-p">
                 En magisk julkrans som välkomnar alla dina gäster vid dörren!<br/>
                 Grön krans med fina juliga detaljer såsom löv, bär och kulor.
                 Jättefin dekoration att placera på dörren eller på väggen inomhus.
             </p>
-            <figure>
-                <img class="card-img" src="Bilder/julkrans.jpg" alt="bild på julig julkrans">
-                <figcaption> 99 kr </figcaption>
-            </figure>
-    
-            <button>Köp</button>
+            <h2 class="pris">99kr</h2>
+            <button class="buy-btn">Köp</button>
 
         </article>
-
-        <article class="container-item" id="item4">
-    
-            <h1>
-                Juldekoration
-            </h1>
-            <p class="card-p">
+<!-- Card 4 -->
+    <article class="container-item" id="item4">
+        <img class="card-img" src="Bilder/dekoration.jpg" alt="en bild på thaimat">
+        <h2 class="title">Juldekoration</h2>
+        <p class="card-p">
                 Vackra nötknäppare tillverkad i trä, en fin juldekoration som passar fint i alla rum. Finns i olika storlekar.
-            </p>
-            <figure>
-                <img class="card-img" src="Bilder/dekoration.jpg" alt="en bild på thaimat">
-                <figcaption> 100 kr </figcaption>
-            </figure>
-    
-            <button>Köp</button>
+        </p>   
+        <h2 class="pris">100kr</h2>   
+            <button class="buy-btn">Köp</button>
 
         </article>
         </section>
@@ -115,7 +97,7 @@
                     <header>Populära Produkter</header>
                     <a href="#">Julgran</a>
                     <a href="#">Julstjärna</a>
-                    <a href="#">Julstjärna</a>
+                    <a href="#">Julkrans</a>
                     <a href="#">Juldekoration</a>
                 </section>
                 <section class="nyhetsbrev">
