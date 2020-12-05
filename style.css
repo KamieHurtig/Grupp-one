@@ -75,7 +75,7 @@ li a:hover:not(.active) {
 }
 
 .omoss {
-  border: 1px solid #d11a1a;
+  *border: 1px solid #d11a1a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: auto;
   display: flex;
@@ -90,7 +90,6 @@ li a:hover:not(.active) {
 
 .title {
   *border: 1px solid #d1721a;
-  color: #d1721a;
   font-family: "Dancing Script", cursive;
   padding-bottom: 20px;
 }
@@ -101,6 +100,7 @@ li a:hover:not(.active) {
   padding: 20px;
 }
 
+/* slutet av "om oss" artikeln */
 .card {
   display: grid;
   grid-template-areas: "card1 card2 card3 card4";
