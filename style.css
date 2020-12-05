@@ -1,6 +1,109 @@
+@charset "UTF-8";
+/* Början av navbar /sandra */
+header {
+  *border: 1px solid #f31b1b;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945), white), url("Bilder/nice-christmas-packages-white-table.jpg");
+  background-size: 100%;
+  padding-top: 25vw;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 45vw;
+}
+
+h1 {
+  *border: 1px solid darkgrey;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 9vw;
+  color: #364936;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-bar {
+  width: 60vw;
+  height: 52px;
+  list-style-type: none;
+  background-color: #e7e7e7;
+  border-radius: 25px;
+}
+
+li {
+  border-radius: 25px;
+  list-style-type: none;
+  float: left;
+  margin: 3px;
+}
+
+li:last-child {
+  border-right: none;
+  border-radius: 25px;
+}
+
+li a {
+  border-radius: 25px;
+  display: block;
+  color: #4d4d4d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  border-radius: 25px;
+  background-color: #c7c7c7;
+}
+
+.active {
+  border-radius: 25px;
+  background-color: #bbd4bc;
+}
+
+/* slutet av navbar */
+/* början av "om oss" artikeln */
+.omoss-container {
+  *border: 1px solid #d11a1a;
+  margin-bottom: 150px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.omoss {
+  border: 1px solid #d11a1a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bild {
+  *border: 1px solid green;
+  width: 150px;
+}
+
+.title {
+  border: 1px solid #d1721a;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 20px;
+}
+
+.gruppett {
+  *border: 1px solid #3c1ad1;
+  width: 400px;
+  padding: 20px;
+}
+
 .container-item {
   display: block;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 .card {
   display: flex;
@@ -8,38 +111,48 @@
   justify-content: space-around;
   text-align: center;
   padding: 15px;
-  transition: 0.1s; }
+  transition: 0.1s;
+}
 
 #item1 {
-  grid-area: card1; }
+  grid-area: card1;
+}
 
 #item2 {
-  grid-area: card2; }
+  grid-area: card2;
+}
 
 #item3 {
-  grid-area: card3; }
+  grid-area: card3;
+}
 
 #item4 {
-  grid-area: card4; }
+  grid-area: card4;
+}
 
 .card:hover {
-  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2);
+}
 
 .container-item {
   border: 1px solid white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  align-items: center; }
+  align-items: center;
+}
 
 .title {
   color: #2d8ac0;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .card-img {
   height: 10rem;
-  width: 10rem; }
+  width: 10rem;
+}
 
 .card-p {
-  width: 10vw; }
+  width: 10vw;
+}
 
 .buy-btn {
   align-self: flex-end;
@@ -48,57 +161,68 @@
   padding: 10px;
   width: 100%;
   border-radius: 5px;
-  font-weight: bold; }
-  .buy-btn:hover {
-    background-color: #004d00;
-    color: black; }
+  font-weight: bold;
+}
+.buy-btn:hover {
+  background-color: #004d00;
+  color: black;
+}
 
 .pris {
   color: #c5004a;
-  text-align: left; }
+  text-align: left;
+}
 
 @media (max-width: 780px) {
   .card {
     display: grid;
-    grid-template-areas: "card1" "card2" "card3" "card4";
-    grid-gap: 10px; } }
-
+    grid-template-areas: "card1" "card2" "card3" "card4";
+    grid-gap: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 footer {
   line-height: 24px;
-  color: #ffff; }
+  color: #ffff;
+}
 
 footer .design {
   background-color: rgba(41, 71, 53, 0.863);
   padding: 16px;
-  padding-top: 48px; }
+  padding-top: 48px;
+}
 
 footer .content {
   max-width: 1080px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px; }
+  grid-gap: 16px;
+}
 
 footer header {
   font-size: 21px;
-  padding-block: 16px; }
+  padding-block: 16px;
+}
 
 footer .content a {
   text-decoration: none;
   display: block;
   padding-block: 12px;
   color: #ffff;
-  opacity: 0.65; }
+  opacity: 0.65;
+}
 
 footer .content a:hover {
   opacity: 1;
   color: rgba(248, 248, 248, 0.993);
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 footer input {
   border-style: solid;
@@ -108,40 +232,51 @@ footer input {
   font-size: 1rem;
   margin-block: 8px;
   border-radius: 8px;
-  border-width: 2px; }
+  border-width: 2px;
+}
 
-footer input[type="email"] {
+footer input[type=email] {
   background-color: rgba(252, 252, 252, 0.486);
-  color: #375037; }
+  color: #375037;
+}
 
-footer input[type="email"]:hover,
-footer input[type="email"]:focus {
-  background-color: #f7f2f2; }
+footer input[type=email]:hover,
+footer input[type=email]:focus {
+  background-color: #f7f2f2;
+}
 
-footer input[type="submit"] {
-  color: #495a41; }
+footer input[type=submit] {
+  color: #495a41;
+}
 
-footer input[type="submit"]:hover {
+footer input[type=submit]:hover {
   background-color: rgba(97, 134, 112, 0.568);
-  color: #ffff; }
+  color: #ffff;
+}
 
 footer .social {
   position: relative;
   left: 20%;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 footer .social i {
   font-size: 32px;
   padding: 12px;
-  text-align: center; }
+  text-align: center;
+}
 
 footer .social i:hover {
   position: relative;
-  top: -5px; }
+  top: -5px;
+}
 
 footer .notice {
   padding-top: 30px;
   text-align: center;
   color: rgba(255, 255, 255, 0.479);
-  font-size: 1rem; }
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
