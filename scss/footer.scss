@@ -1,37 +1,92 @@
-#footer {
-    background: rgba(67, 90, 51, 0.822); 
-    margin-top: 1rem;
-    height: 100%;
-    padding-top:100px;
-    padding-bottom: 10px;
-    border-top: 2px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    }
-     
-    .footer-social{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      
-    }
-    .social i{
-      padding-right: 10px;
-      padding-left: 10px;
-      font-size: 50px;
-      color: #fff;
-    }
-  
-    .footer-a-li a{
-      text-decoration: none; 
-      color: black; 
-    }
-  
-    .footer-bottom{
-      background-color: black;
-      color: white;
-      width: 100%;
-      text-align: center;
-    }
+footer{
+  line-height: 24px;
+  color: #ffff;
+}
+
+footer .design{
+  background-color: rgba(41, 71, 53, 0.863);
+  padding: 16px;
+  padding-top: 48px;
+}
+
+footer .content{
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+footer header{
+  font-size: 21px;
+  padding-block: 16px;
+}
+
+footer .content a{
+  text-decoration: none;
+  display: block;
+  padding-block: 12px;
+  color: #ffff;
+  opacity: 0.65;
+}
+
+footer .content a:hover{
+  opacity: 1;
+  color: rgba(248, 248, 248, 0.993);
+  font-size: 18px;
+}
+
+footer input{
+  border-style: solid;
+  width: 100%;
+  line-height: 24px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  margin-block: 8px;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+footer input[type="email"] {
+  background-color: rgba(252, 252, 252, 0.486);
+  color: rgb(55, 80, 55);
+}
+
+footer input[type="email"]:hover,
+footer input[type="email"]:focus {
+    background-color: rgb(247, 242, 242);
+}
+
+footer input[type="submit"] {
+  color: rgb(73, 90, 65);
+}
+
+footer input[type="submit"]:hover{
+  background-color: rgba(97, 134, 112, 0.568);
+  color: #ffff;
+}
+
+footer .social{
+ position: relative;
+ left: 20%;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+footer .social i{
+  font-size: 32px;
+  padding: 12px;
+  text-align: center;
+}
+
+footer .social i:hover{
+  position: relative; 
+  top: -5px;
+}
+
+footer .notice{
+  padding-top: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 1rem;
+}
