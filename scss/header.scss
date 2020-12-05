@@ -99,7 +99,8 @@ li a:hover:not(.active) {
 }
 
 .title {
-  border: 1px solid rgb(209, 114, 26);
+  *border: 1px solid rgb(209, 114, 26);
+  color: rgb(209, 114, 26);
   font-family: "Dancing Script", cursive;
   padding-bottom: 20px;
 }

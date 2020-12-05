@@ -89,7 +89,8 @@ li a:hover:not(.active) {
 }
 
 .title {
-  border: 1px solid #d1721a;
+  *border: 1px solid #d1721a;
+  color: #d1721a;
   font-family: "Dancing Script", cursive;
   padding-bottom: 20px;
 }
@@ -100,18 +101,13 @@ li a:hover:not(.active) {
   padding: 20px;
 }
 
-.container-item {
-  display: block;
-  flex-wrap: wrap;
-}
-
 .card {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  text-align: center;
-  padding: 15px;
+  display: grid;
+  grid-template-areas: "card1 card2 card3 card4";
+  *justify-content: space-around;
+  *padding: 15px;
   transition: 0.1s;
+  *background-color: #c5004a;
 }
 
 #item1 {
@@ -135,14 +131,15 @@ li a:hover:not(.active) {
 }
 
 .container-item {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 30px 100px 40px 30px;
   border: 1px solid white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   align-items: center;
-}
-
-.title {
-  color: #2d8ac0;
-  font-weight: bold;
+  text-align: center;
+  *background-color: aqua;
+  padding: 10px;
 }
 
 .card-img {
@@ -151,26 +148,27 @@ li a:hover:not(.active) {
 }
 
 .card-p {
-  width: 10vw;
+  *width: 10vw;
+  padding: 5px;
 }
 
 .buy-btn {
-  align-self: flex-end;
   background-color: #2ea44f;
   color: white;
   padding: 10px;
   width: 100%;
   border-radius: 5px;
   font-weight: bold;
+  margin-bottom: 0;
+  position: relative;
 }
 .buy-btn:hover {
-  background-color: #004d00;
+  background-color: white;
   color: black;
 }
 
 .pris {
   color: #c5004a;
-  text-align: left;
 }
 
 @media (max-width: 780px) {
