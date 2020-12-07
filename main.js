@@ -35,8 +35,9 @@ let products = [
 for (let i=0; i < cards.length; i++) {
     cards[i].addEventListener('click', () => {
         cartNumbers(products[i]);
+        totalCost(products[i])
     })
-}
+};
 
 //To make sure the number by the cart stays after refreshing the page
 function onLoadCartNumbers() {
@@ -46,10 +47,10 @@ function onLoadCartNumbers() {
         document.querySelector('.cart span').textContent = productNumbers;
     }
     
-}
+};
 
 //The function that's retrieving/storing data 
-function cartNumbers(products) {
+function cartNumbers(product) {
    
     //Counts how many items is stored
     let productNumbers = localStorage.getItem('cartNumbers');
@@ -68,19 +69,83 @@ function cartNumbers(products) {
         document.querySelector('.cart span').textContent = 1;
     }
     
-    setitems(product);
+    setItems(product);
 }
 
 function setItems(product) {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems)
 
-    product.incart = 1;
-
-    let cartItems = {
-        [product.tag]: product
+    if(cartItems != null) {
+        if(cartItems[product.tag] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+        cartItems[product.tag].inCart += 1;
+    } else {
+        product.inCart = 1;
+        cartItems = {
+            [product.tag]: product
+        }
+    }
+    
+    localStorage.setItem("productsInCart", JSON.stringify (cartItems));
     }
 
-    localStorage.setItem('productsInCart', )
+function totalCost(product) {
+    
+    let cartCost = localStorage.getItem('totalCost');
+    
+
+    if(cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem('totalCost', cartCost + product.price);
+    } else {
+        localStorage.setItem('totalCost', product.price);
+    }   
+
+}
+
+//Pushandet och visandet av produkterna på varukorgssidan
+
+function displayCart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".products");
+
+    if( cartItems && productContainer ) {
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+            <div class="product">
+                
+                <img src=./bilder/${item.tag}.jpg">
+                <span>${item.name}</span>
+            </div>
+            <div class="price">${item.price}</div>
+            <div class="quantity">
+                <span>${item.inCart}</span>
+            </div>
+            <div class="total">
+                $${item.inCart * item.price}SEK
+            </div>
+            `
+        });
+
+        productContainer.innerHTML += `
+            <div class="totalContainer">
+                <h4 class="totalTitle">
+                    Antal artiklar totalt
+                </h4>
+                <h4 class="total">
+
+                </h4>
+        `
+    }
 }
 
 //Running the function
 onLoadCartNumbers();
+displayCart();
