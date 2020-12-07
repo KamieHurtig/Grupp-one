@@ -2,7 +2,7 @@
 //Selects all the buy buttons
 let cards = document.querySelectorAll('.buy-btn');
 
-//"let products" is right now just info for later to map out what needs to be added
+//The different products that is available
 let products = [
     {
         name: 'Julgran',
@@ -31,16 +31,16 @@ let products = [
 ];
 
 
-//Loop to count how many items ("cards") there is and adding the event for clicking the buttons
+//Loop to count how many items there is and adding the event for clicking the buttons
 for (let i=0; i < cards.length; i++) {
     cards[i].addEventListener('click', () => {
-        cardNumbers();
+        cartNumbers(products[i]);
     })
 }
 
 //To make sure the number by the cart stays after refreshing the page
-function onLoadCardNumbers() {
-    let productNumbers = window.localStorage.getItem('cardnumbers');
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
 
     if( productNumbers ) {
         document.querySelector('.cart span').textContent = productNumbers;
@@ -49,21 +49,38 @@ function onLoadCardNumbers() {
 }
 
 //The function that's retrieving/storing data 
-function cardNumbers() {
+function cartNumbers(products) {
    
     //Counts how many items is stored
-    let productNumbers = window.localStorage.getItem('cardnumbers');
+    let productNumbers = localStorage.getItem('cartNumbers');
 
     //Transforms the data into numbers
     productNumbers = parseInt(productNumbers);
-   
-    /*Stores the data on the webpage (prevents it from disappearing when people refresh the page so the data stays in the cart)
-    */
-    window.localStorage.setItem('cardNumbers', 1);
 
-    //Updates the number with the list-item named "cart" in the header
-    document.querySelector('.cart span').textContent = 1;
+     /*Stores the data on the webpage (prevents it from disappearing when people refresh the page so the data stays in the cart), but also checks if there is data allready stored. Updates the number with the list-item named "cart" in the header
+    */
+
+    if( productNumbers ) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.cart span').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.cart span').textContent = 1;
+    }
+    
+    setitems(product);
+}
+
+function setItems(product) {
+
+    product.incart = 1;
+
+    let cartItems = {
+        [product.tag]: product
+    }
+
+    localStorage.setItem('productsInCart', )
 }
 
 //Running the function
-onLoadCardNumbers();
+onLoadCartNumbers();
