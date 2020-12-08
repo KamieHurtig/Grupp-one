@@ -9,35 +9,41 @@ header {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  height: 45vw; }
+  height: 45vw;
+}
 
 h1 {
   *border: 1px solid darkgrey;
   margin-bottom: 40px;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 9vw;
-  color: #364936; }
+  color: #364936;
+}
 
 nav {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 #nav-bar {
   width: 60vw;
   height: 52px;
   list-style-type: none;
   background-color: #e7e7e7;
-  border-radius: 25px; }
+  border-radius: 25px;
+}
 
 li {
   border-radius: 25px;
   list-style-type: none;
   float: left;
-  margin: 3px; }
+  margin: 3px;
+}
 
 li:last-child {
   border-right: none;
-  border-radius: 25px; }
+  border-radius: 25px;
+}
 
 li a {
   border-radius: 25px;
@@ -45,15 +51,18 @@ li a {
   color: #4d4d4d;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 li a:hover:not(.active) {
   border-radius: 25px;
-  background-color: #c7c7c7; }
+  background-color: #c7c7c7;
+}
 
 .active {
   border-radius: 25px;
-  background-color: #bbd4bc; }
+  background-color: #bbd4bc;
+}
 
 /* slutet av navbar */
 /* början av "om oss" artikeln */
@@ -62,7 +71,8 @@ li a:hover:not(.active) {
   margin-bottom: 150px;
   width: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .omoss {
   *border: 1px solid #d11a1a;
@@ -70,21 +80,25 @@ li a:hover:not(.active) {
   width: auto;
   display: flex;
   justify-content: center;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .bild {
   *border: 1px solid green;
-  width: 150px; }
+  width: 150px;
+}
 
 .title {
   *border: 1px solid #d1721a;
-  font-family: 'Dancing Script', cursive;
-  padding-bottom: 20px; }
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 20px;
+}
 
 .gruppett {
   *border: 1px solid #3c1ad1;
   width: 400px;
-  padding: 20px; }
+  padding: 20px;
+}
 
 /* slutet av "om oss" artikeln */
 .card {
@@ -93,22 +107,28 @@ li a:hover:not(.active) {
   *justify-content: space-around;
   *padding: 15px;
   transition: 0.1s;
-  *background-color: #c5004a; }
+  *background-color: #c5004a;
+}
 
 #item1 {
-  grid-area: card1; }
+  grid-area: card1;
+}
 
 #item2 {
-  grid-area: card2; }
+  grid-area: card2;
+}
 
 #item3 {
-  grid-area: card3; }
+  grid-area: card3;
+}
 
 #item4 {
-  grid-area: card4; }
+  grid-area: card4;
+}
 
 .card:hover {
-  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 8px px 0 rgba(0, 0, 0, 0.2);
+}
 
 .container-item {
   display: grid;
@@ -119,15 +139,18 @@ li a:hover:not(.active) {
   align-items: center;
   text-align: center;
   *background-color: aqua;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .card-img {
   height: 10rem;
-  width: 10rem; }
+  width: 10rem;
+}
 
 .card-p {
   *width: 10vw;
-  padding: 5px; }
+  padding: 5px;
+}
 
 .buy-btn {
   background-color: #2ea44f;
@@ -137,62 +160,99 @@ li a:hover:not(.active) {
   border-radius: 5px;
   font-weight: bold;
   margin-bottom: 0;
-  position: relative; }
-  .buy-btn:hover {
-    background-color: white;
-    color: black; }
+  position: relative;
+  border: none;
+}
+.buy-btn:hover {
+  background-color: white;
+  color: black;
+}
 
 .pris {
-  color: #c5004a; }
+  color: #c5004a;
+}
+
+.loggain {
+  float: right;
+  background-color: #2ea44f;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
+.loggain:hover {
+  background-color: white;
+}
+.loggain a {
+  color: white;
+  text-decoration: none;
+}
+.loggain a:hover {
+  color: black;
+  background-color: white;
+}
 
 @media (max-width: 780px) {
   .card {
     display: grid;
-    grid-template-areas: "card1" "card2" "card3" "card4";
-    grid-gap: 10px; } }
-
+    grid-template-areas: "card1" "card2" "card3" "card4";
+    grid-gap: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   display: flex;
   place-content: end;
   flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+}
 
 footer {
   line-height: 24px;
-  color: #ffff; }
+  color: #ffff;
+}
 
 footer .design {
   background-color: rgba(41, 71, 53, 0.863);
   padding: 16px;
-  padding-top: 48px; }
+  padding-top: 48px;
+}
 
 footer .content {
   max-width: 1080px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px; }
+  grid-gap: 16px;
+}
 
 footer .footer-h2 {
   font-size: 21px;
-  padding-block: 16px; }
+  padding-block: 16px;
+}
 
 footer .content a {
   text-decoration: none;
   display: block;
   padding-block: 12px;
   color: #ffff;
-  opacity: 0.65; }
+  opacity: 0.65;
+}
 
 footer .content a:hover {
   opacity: 1;
   color: rgba(248, 248, 248, 0.993);
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 footer input {
   border-style: solid;
@@ -202,7 +262,8 @@ footer input {
   font-size: 1rem;
   margin-block: 8px;
   border-radius: 8px;
-  border-width: 2px; }
+  border-width: 2px;
+}
 
 @media (max-width: 331px) {
   footer input {
@@ -214,40 +275,51 @@ footer input {
     margin-block: 4px;
     border-radius: 4px;
     border-width: 1px;
-    float: none; } }
-
-footer input[type="email"] {
+    float: none;
+  }
+}
+footer input[type=email] {
   background-color: rgba(252, 252, 252, 0.486);
-  color: #375037; }
+  color: #375037;
+}
 
-footer input[type="email"]:hover,
-footer input[type="email"]:focus {
-  background-color: #f7f2f2; }
+footer input[type=email]:hover,
+footer input[type=email]:focus {
+  background-color: #f7f2f2;
+}
 
-footer input[type="submit"] {
-  color: #495a41; }
+footer input[type=submit] {
+  color: #495a41;
+}
 
-footer input[type="submit"]:hover {
+footer input[type=submit]:hover {
   background-color: rgba(97, 134, 112, 0.568);
-  color: #ffff; }
+  color: #ffff;
+}
 
 footer .social {
   position: relative;
   left: 20%;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 footer .social i {
   font-size: 32px;
   padding: 12px;
-  text-align: center; }
+  text-align: center;
+}
 
 footer .social i:hover {
   position: relative;
-  top: -5px; }
+  top: -5px;
+}
 
 footer .notice {
   padding-top: 30px;
   text-align: center;
   color: rgba(255, 255, 255, 0.479);
-  font-size: 1rem; }
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
