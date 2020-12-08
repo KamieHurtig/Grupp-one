@@ -15,7 +15,7 @@ h1 {
   *border: 1px solid darkgrey;
   margin-bottom: 40px;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 9vw;
   color: #364936; }
 
@@ -29,14 +29,20 @@ nav {
   background-color: #e7e7e7;
   border-radius: 25px; }
 
+@media screen and (max-width: 480px) {
+  #nav-bar, li {
+    background-color: none;
+    list-style-type: none;
+    margin: 3px; } }
+
 li {
+  background-color: #e7e7e7;
   border-radius: 25px;
   list-style-type: none;
   float: left;
   margin: 3px; }
 
 li:last-child {
-  border-right: none;
   border-radius: 25px; }
 
 li a {
@@ -55,16 +61,22 @@ li a:hover:not(.active) {
   border-radius: 25px;
   background-color: #bbd4bc; }
 
+.cart {
+  float: right; }
+
 /* slutet av navbar */
 /* början av "om oss" artikeln */
-.omoss-container {
+span {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.omoss-container, .kontaktformular-container {
   *border: 1px solid #d11a1a;
   margin-bottom: 150px;
   width: auto;
   display: flex;
   justify-content: center; }
 
-.omoss {
+.omoss, .kontaktformular-container {
   *border: 1px solid #d11a1a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: auto;
@@ -78,7 +90,7 @@ li a:hover:not(.active) {
 
 .title {
   *border: 1px solid #d1721a;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   padding-bottom: 20px; }
 
 .gruppett {
@@ -137,13 +149,34 @@ li a:hover:not(.active) {
   border-radius: 5px;
   font-weight: bold;
   margin-bottom: 0;
-  position: relative; }
+  position: relative;
+  border: none; }
   .buy-btn:hover {
     background-color: white;
     color: black; }
 
 .pris {
   color: #c5004a; }
+
+.loggain {
+  float: right;
+  background-color: #2ea44f;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin: 10px; }
+  .loggain:hover {
+    background-color: white; }
+  .loggain a {
+    color: white;
+    text-decoration: none; }
+    .loggain a:hover {
+      color: black;
+      background-color: white; }
 
 @media (max-width: 780px) {
   .card {
@@ -252,7 +285,7 @@ footer .notice {
   color: rgba(255, 255, 255, 0.479);
   font-size: 1rem; }
 
-section {
+.kontakt-section {
   height: 100vh;
   width: 100%;
   background-color: rgba(77, 109, 77, 0.315);
@@ -262,7 +295,7 @@ section {
   flex-direction: column;
   font-family: 'Dancing Script', cursive; }
 
-.container {
+.kontakt-container {
   width: 90%;
   max-width: 500px;
   padding: 20px;
@@ -338,3 +371,38 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #495a41; }
+
+/* början av "om oss" artikeln */
+span {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.omoss-container, .kontaktformular-container {
+  *border: 1px solid #d11a1a;
+  margin-bottom: 150px;
+  width: auto;
+  display: flex;
+  justify-content: center; }
+
+.omoss, .kontaktformular-container {
+  *border: 1px solid #d11a1a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.bild {
+  *border: 1px solid green;
+  width: 150px; }
+
+.title {
+  *border: 1px solid #d1721a;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 20px; }
+
+.gruppett {
+  *border: 1px solid #3c1ad1;
+  width: 400px;
+  padding: 20px; }
+
+/* slutet av "om oss" artikeln */
