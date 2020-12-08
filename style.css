@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Början av navbar /sandra */
 header {
   *border: 1px solid #f31b1b;
@@ -49,7 +50,6 @@ li {
 }
 
 li:last-child {
-  border-right: none;
   border-radius: 25px;
 }
 
@@ -119,6 +119,7 @@ span {
 }
 
 /* slutet av "om oss" artikeln */
+
 .card {
   display: grid;
   grid-template-areas: "card1 card2 card3 card4";
@@ -191,17 +192,18 @@ span {
 }
 
 .loggain {
-  float: right;
   background-color: #2ea44f;
   color: white;
   padding: 10px;
   width: 100%;
   border-radius: 25px;
   border: none;
-  width: 100px;
-  height: 50px;
-  margin: 10px;
+  width: 130px;
+  height: 45px;
+  margin-top:4px;
+  float:right;
 }
+
 .loggain:hover {
   background-color: white;
 }
@@ -210,7 +212,7 @@ span {
   text-decoration: none;
 }
 .loggain a:hover {
-  color: black;
+  color: rgb(46, 46, 46);
   background-color: white;
 }
 
