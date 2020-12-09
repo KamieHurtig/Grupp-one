@@ -37,7 +37,7 @@ nav {
   #nav-bar, li, .loggain{
   background-color:none;
   list-style-type: none;
-  margin: 3px;
+  align-items: center;
   }
 
 
