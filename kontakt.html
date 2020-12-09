@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="kontakt.js" defer></script>
+  </head>
+  <body>
+      <section class="kontakt-section">
+          <div class="kontakt-container">
+            <h3 class="form-h3">Kontakt Formulär</h3>
+              <form action="MAILTO:kamiehurtig@gmail.com" method="POST" enctype="text/plain" class="form" id="form">
+
+                <div class="form-div " >
+                <label for="namn">Namn</label>
+                <input type="text" id="namn" name="namn" placeholder="Namn & Efternamn">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                </div>
+
+                <div class="form-div " >
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="blabla@gmail.com">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    </div>
+
+                <div class="form-div">
+                    <label for="meddelande">Meddelande</label>
+                    <textarea name="meddelande" id="meddelande" cols="50" rows="8"></textarea>
+                    </div>
+
+                    <button type="submit">Skicka</button>
+              </form>
+          </div>
+      </section>
+
+      <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+      
+</body>
+</html>
