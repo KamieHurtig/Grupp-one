@@ -322,4 +322,8 @@ footer .notice {
   font-size: 1rem;
 }
 
+.loginDiv {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

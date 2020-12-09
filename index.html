@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
+    <script src="login.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
@@ -40,13 +41,34 @@
           <li></li>
         </ul>
       </nav>
-      <button class="loggain">
-        <a href="loggain.html">
-          <span>Logga In</span><i class="fas fa-user-plus"></i>
-        </a>
+      <button
+        class="loggain"
+        type="button"
+        onclick="document.getElementById('loginDiv').style.display='block'"
+      >
+        <span>Logga In</span><i class="fas fa-user-plus"></i>
       </button>
     </header>
-
+    <!-- Admin login section-->
+    <div id="loginDiv" class="loginDiv">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        id="username"
+        required
+      />
+      <label for="password"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        id="password"
+        required
+      />
+      <button type="submit" onclick="checkFunction()">Login</button>
+    </div>
     <!-- Här Börjar Card -->
     <!-- Card 1 -->
     <section class="card">
