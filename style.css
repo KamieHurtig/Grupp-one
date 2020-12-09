@@ -1,16 +1,15 @@
 @charset "UTF-8";
-
 /* Början av navbar /sandra */
 header {
   *border: 1px solid #f31b1b;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945), white), url("Bilder/nice-christmas-packages-white-table.jpg");
   background-size: 100%;
+  padding-top: 25vw;
+  margin-bottom: 100px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   height: 45vw;
-  padding-top: 25vw;
-  margin-bottom: 230px;
 }
 
 h1 {
@@ -41,8 +40,13 @@ nav {
   }
 
 
+@media screen and (max-width: 480px) {
+  #nav-bar, li {
+    background-color: none;
+    list-style-type: none;
+    margin: 3px;
+  }
 }
-
 li {
   background-color: #e7e7e7;
   border-radius: 25px;
@@ -74,19 +78,17 @@ li a:hover:not(.active) {
   background-color: #bbd4bc;
 }
 
-.cart{
-  float:right;
+.cart {
+  float: right;
 }
-
 
 /* slutet av navbar */
 /* början av "om oss" artikeln */
-
 span {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.omoss-container, .kontaktformular-container{
+.omoss-container, .kontaktformular-container {
   *border: 1px solid #d11a1a;
   margin-bottom: 150px;
   width: auto;
@@ -94,7 +96,7 @@ span {
   justify-content: center;
 }
 
-.omoss, .kontaktformular-container{
+.omoss, .kontaktformular-container {
   *border: 1px solid #d11a1a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: auto;
@@ -121,7 +123,6 @@ span {
 }
 
 /* slutet av "om oss" artikeln */
-
 .card {
   display: grid;
   grid-template-areas: "card1 card2 card3 card4";
@@ -194,18 +195,17 @@ span {
 }
 
 .loggain {
+  float: right;
   background-color: #2ea44f;
   color: white;
   padding: 10px;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 5px;
   border: none;
-  width: 130px;
-  height: 45px;
-  margin-top:4px;
-  float:right;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
 }
-
 .loggain:hover {
   background-color: white;
 }
@@ -214,7 +214,7 @@ span {
   text-decoration: none;
 }
 .loggain a:hover {
-  color: rgb(46, 46, 46);
+  color: black;
   background-color: white;
 }
 
@@ -344,4 +344,151 @@ footer .notice {
   font-size: 1rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+.loginDiv {
+  display: none;
+}
+
+.kontakt-section {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(77, 109, 77, 0.315);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Dancing Script", cursive;
+}
+
+.kontakt-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #74ac66;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form-h3 {
+  text-align: center;
+}
+
+.form-div {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.form-div.success input {
+  border: 2px solid green;
+}
+
+.form-div.success i.fa-check-circle {
+  color: green;
+  visibility: visible;
+}
+
+.form-div.error input {
+  border: 2px solid #aa260f;
+}
+
+.form-div.error i.fa-exclamation-circle {
+  color: #801e00;
+  visibility: visible;
+}
+
+.form-div i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-div small {
+  visibility: hidden;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  font-size: 1vw;
+}
+
+.form-div.error small {
+  visibility: visible;
+  color: red;
+}
+
+.form-div input,
+.form-div textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid #305a43;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type=submit] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: #87a573;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Dancing Script", cursive;
+}
+
+button[type=submit]:hover {
+  background-color: #495a41;
+}
+
+/* början av "om oss" artikeln */
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.omoss-container, .kontaktformular-container {
+  *border: 1px solid #d11a1a;
+  margin-bottom: 150px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.omoss, .kontaktformular-container {
+  *border: 1px solid #d11a1a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bild {
+  *border: 1px solid green;
+  width: 150px;
+}
+
+.title {
+  *border: 1px solid #d1721a;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 20px;
+}
+
+.gruppett {
+  *border: 1px solid #3c1ad1;
+  width: 400px;
+  padding: 20px;
+}
+
+/* slutet av "om oss" artikeln */
+
+/* # sourceMappingURL=style.css.map */

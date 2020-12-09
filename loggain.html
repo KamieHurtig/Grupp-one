@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
     <script src="login.js" defer></script>
   </head>
   <body>
-    <form>
-      <input id="username" />
-      <input id="password" />
-      <button type="button" onclick="checkFunction()">
-        Submit User name and password
-      </button>
-    </form>
+    <button
+      class="login-btn"
+      type="button"
+      onclick="document.getElementById('loginDiv').style.display='block'"
+      style="width: 100px; margin-bottom: 5px"
+    >
+      Log in
+    </button>
+
+    <div id="loginDiv" class="loginDiv">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        id="username"
+        required
+      />
+      <label for="password"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        id="password"
+        required
+      />
+      <button type="submit" onclick="checkFunction()">Login</button>
+    </div>
     <br />
     <div id="card-info"></div>
   </body>
