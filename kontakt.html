@@ -13,6 +13,30 @@
     <script src="kontakt.js" defer></script>
   </head>
   <body>
+
+    <header>
+      <nav>
+        <h1>Julpynt.se</h1>
+        <ul id="nav-bar">
+          <li class="active"><a href="index.html">HEM</a></li>
+          <li> <a href="kontakt.html">KONTAKT</a></li>
+          <li class="cart" style="float: right">
+            <a href="cart.html">
+              <i class="fas fa-shopping-basket"></i> VARUKORG <span>( 0 )</span>
+            </a> </li>
+            
+        </ul>
+
+        <button class="loggain">
+          <a href="loggain.html">
+            <i class="fas fa-user-plus"></i><span> LOGGA IN </span>
+          </a>
+        </button>
+      </nav>
+      
+    </header>
+
+    <!-- kontakt formulär -->
       <section class="kontakt-section">
           <div class="kontakt-container">
             <h3 class="form-h3">Kontakt Formulär</h3>
@@ -43,6 +67,49 @@
               </form>
           </div>
       </section>
+
+      <!-- start footer -->
+    <footer>
+      <div class="design">
+        <div class="content">
+          <section class="section">
+            <h2 class="footer-h2">Företag</h2>
+            <a href="#">Hem</a>
+            <a href="#">Om oss</a>
+            <a href="kontakt.html">Kontakt</a> 
+            <a href="#">Produkter</a>
+          </section>
+          <section class="section">
+            <h2 class="footer-h2">Populära Produkter</h2>
+            <a href="#">Julgran</a>
+            <a href="#">Julstjärna</a>
+            <a href="#">Julkrans</a>
+            <a href="#">Juldekoration</a>
+          </section>
+          <section class="section nyhetsbrev">
+            <h2 class="footer-h2">Nyhetsbrev och Rabatter</h2>
+            <form action="">
+              <input
+                id="email"
+                type="email"
+                placeholder="emailadress@se"
+                id=""
+              />
+              <input id="medlem" type="submit" value="Prenumerera" />
+            </form>
+            <div class="social">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </section>
+        </div>
+        <div class="notice">
+          &copy; numerouno.se | Designed by <strong>Numero Uno</strong>
+        </div>
+      </div>
+    </footer>
 
       <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
       
