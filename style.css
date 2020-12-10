@@ -32,13 +32,6 @@ nav {
   background-color: #e7e7e7;
   border-radius: 25px;
 }
-@media screen and (max-width: 495px) {
-  #nav-bar, li, .loggain{
-  background-color:none;
-  list-style-type: none;
-  align-items: center;
-  }
-
 
 @media screen and (max-width: 480px) {
   #nav-bar, li {
@@ -344,7 +337,8 @@ footer .notice {
   font-size: 1rem;
 }
 
-.loginDiv {
+.loginDiv,
+.card-update-div {
   display: none;
 }
 
@@ -491,4 +485,4 @@ span {
 
 /* slutet av "om oss" artikeln */
 
-/* # sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
