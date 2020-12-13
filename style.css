@@ -1,20 +1,20 @@
 @charset "UTF-8";
 /* Början av navbar /sandra */
 header {
-  *border: 1px solid red;
+  border: 1px solid red;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945), white), url("Bilder/nice-christmas-packages-white-table.jpg");
   background-size: 100%;
   padding-top: 20vw;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  height:auto;
-  margin-bottom:60px;
+  height: auto;
+  margin-bottom: 60px;
   *flex-wrap: wrap;
 }
 
 h1 {
-  *border: 1px solid rgb(250, 14, 250);
+  border: 1px solid #fa0efa;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 9vw;
@@ -23,21 +23,20 @@ h1 {
 }
 
 nav {
-  *border: 1px solid blue;
+  border: 1px solid blue;
   width: 75vw;
   height: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-container {
-  *border: 1px solid rgb(255, 166, 0);
-
+  border: 1px solid #ffa600;
 }
 
 #nav-bar {
   *border: 1px solid lightgreen;
   width: 74.5vw;
-  height: 53px;
+  height: 55px;
   list-style-type: none;
   background-color: #e7e7e7;
   border-radius: 25px;
@@ -83,30 +82,27 @@ li a:hover:not(.active) {
     margin-bottom: 40px;
     width: 100vw;
     height: 330px;
-    margin-bottom:450px;
+    margin-bottom: 450px;
   }
-  
-  nav, .loggain, .cart{
-    float:none;
+
+  nav, .loggain, .cart {
+    float: none;
   }
+
   .cart {
-    width:74.5vw;
+    width: 74vw;
   }
-  
 
   #nav-bar, li {
-    float:none; 
+    float: none;
   }
 
   li {
-    border:solid white 5px;
+    border: solid white 5px;
     margin: 0px;
-
   }
 }
-
 /* slutet av navbar */
-
 /* början av "om oss" artikeln */
 span {
   font-family: Arial, Helvetica, sans-serif;
@@ -147,15 +143,29 @@ span {
 }
 
 /* slutet av "om oss" artikeln */
-
-/* början på cards */
-
 .card {
-  *border: 1px solid blue;
-  display: flex;
-  justify-content: center;
-  flex-wrap:wrap;
-  background-color: white;
+  display: grid;
+  grid-template-areas: "card1 card2 card3 card4";
+  *justify-content: space-around;
+  *padding: 15px;
+  transition: 0.1s;
+  *background-color: #c5004a;
+}
+
+#item1 {
+  grid-area: card1;
+}
+
+#item2 {
+  grid-area: card2;
+}
+
+#item3 {
+  grid-area: card3;
+}
+
+#item4 {
+  grid-area: card4;
 }
 
 .card:hover {
@@ -163,15 +173,15 @@ span {
 }
 
 .container-item {
-  *border: 1px red solid;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 30px 100px 40px 30px;
+  border: 1px solid white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
   text-align: center;
-  flex-wrap:flex;
-  padding: 20px;
-  margin: 20px;
-  width: 270px;
-  height: 480px;
+  *background-color: aqua;
+  padding: 10px;
 }
 
 .card-img {
@@ -180,49 +190,44 @@ span {
 }
 
 .card-p {
-  *border: 1px green solid;
-  padding: 10px;
-  font-size: 0.9rem;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 225px;
-  height: 120px;
+  *width: 10vw;
+  padding: 5px;
 }
 
 .buy-btn {
   background-color: #2ea44f;
   color: white;
   padding: 10px;
-  width:70%;
-  border-radius: 25px;
+  width: 100%;
+  border-radius: 5px;
   font-weight: bold;
-  margin-bottom: 10;
+  margin-bottom: 0;
+  position: relative;
   border: none;
 }
 .buy-btn:hover {
-  background-color: rgb(19, 105, 55);
+  background-color: white;
+  color: black;
 }
 
 .pris {
-  font-family: Arial, Helvetica, sans-serif;
   color: #c5004a;
-  margin:10px;
 }
-
-/* här börjar logga in knappen */
 
 .loggain {
   float: right;
   background-color: #2ea44f;
   color: white;
-  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
   border: none;
-  width: 150px;
-  height: 55px;
-  margin-top:5px;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
 }
-
 .loggain:hover {
-  background-color: rgb(18, 109, 53);
+  background-color: white;
 }
 .loggain a {
   color: white;
@@ -233,13 +238,20 @@ span {
   background-color: white;
 }
 
+@media (max-width: 780px) {
+  .card {
+    display: grid;
+    grid-template-areas: "card1" "card2" "card3" "card4";
+    grid-gap: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*body {
+body {
   display: flex;
   place-content: end;
   flex-direction: column;
@@ -247,7 +259,6 @@ span {
 }
 
 footer {
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 24px;
   color: #ffff;
 }
@@ -354,8 +365,36 @@ footer .notice {
 }
 
 .loginDiv,
-.card-update-div {
+.card-update-div,
+.creating-card {
   display: none;
+}
+
+.loggain {
+  float: right;
+  background-color: #2ea44f;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  width: 150px;
+  height: 45px;
+  margin-top: 3px;
+}
+
+.loggain:hover {
+  background-color: white;
+}
+
+.loggain a {
+  color: white;
+  text-decoration: none;
+}
+
+.loggain a:hover {
+  color: black;
+  background-color: white;
 }
 
 .kontakt-section {
@@ -490,8 +529,7 @@ span {
 .title {
   *border: 1px solid #d1721a;
   font-family: "Dancing Script", cursive;
-  padding-top:20px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .gruppett {

@@ -22,28 +22,8 @@ return
 }
 
 function updateCards(){
-    var btn = document.getElementById('card-update');
+    var btn = document.getElementById('creating-card');
     btn.style.display="block";
 }
 //Card update system
 
-  const inpKey = document.querySelector("#cardKey");
-      const inpValue = document.querySelector("#cardInput");
-      const btnInsert = document.querySelector("#btnInsert");
-      const cardOutput = document.querySelector(".cardOutput");
-
-      btnInsert.onclick = function () {
-        const key = inpKey.value;
-        const value = inpValue.value;
-
-        if (key && value) {
-          localStorage.setItem(key, value);
-          location.reload();
-        }
-      };
-
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        const value = localStorage.getItem(key);
-        cardOutput.innerHTML += `${key} : ${value} <br />`;
-      }
