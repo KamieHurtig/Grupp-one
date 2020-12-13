@@ -200,20 +200,22 @@ span {
   background-color: #2ea44f;
   color: white;
   padding: 10px;
-  width: 100%;
-  border-radius: 5px;
+  width:70%;
+  border-radius: 25px;
   font-weight: bold;
   margin-bottom: 0;
   position: relative;
   border: none;
 }
 .buy-btn:hover {
-  background-color: white;
+  background-color: rgb(148, 223, 191);
   color: black;
 }
 
 .pris {
+  font-family: "Dancing Script", cursive;
   color: #c5004a;
+  margin-bottom:30px;
 }
 
 .loggain {
