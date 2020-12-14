@@ -386,6 +386,7 @@ footer .notice {
   background-color: white;
 }
 
+/* Början av styling av kontaktformulär  */
 .kontakt-section {
   height: 100vh;
   width: 100%;
@@ -410,6 +411,7 @@ footer .notice {
 
 .form-h3 {
   text-align: center;
+  font-size:2rem;
 }
 
 .form-div {
