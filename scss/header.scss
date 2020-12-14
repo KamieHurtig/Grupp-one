@@ -1,19 +1,18 @@
-/* Början av navbar /sandra */
+/* Början av header + navbar /sandra */
 header {
-  border: 1px solid red;
+  *border: 1px solid red;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945), white), url("Bilder/nice-christmas-packages-white-table.jpg");
   background-size: 100%;
   padding-top: 20vw;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  height:auto;
-  margin-bottom:60px;
-  *flex-wrap: wrap;
+  height: auto;
+  margin-bottom: 60px;
 }
 
 h1 {
-  border: 1px solid rgb(250, 14, 250);
+  *border: 1px solid #fa0efa;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 9vw;
@@ -22,16 +21,16 @@ h1 {
 }
 
 nav {
-  border: 1px solid blue;
+  *border: 1px solid blue;
   width: 75vw;
   height: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-container {
-  border: 1px solid rgb(255, 166, 0);
-
+  *border: 1px solid #ffa600;
 }
+
 #nav-bar {
   *border: 1px solid lightgreen;
   width: 74.5vw;
@@ -81,66 +80,24 @@ li a:hover:not(.active) {
     margin-bottom: 40px;
     width: 100vw;
     height: 330px;
-    margin-bottom:450px;
+    margin-bottom: 50vh;
   }
-  
-  nav, .loggain, .cart{
-    float:none;
+
+  nav, .loggain, .cart {
+    float: none;
   }
+
   .cart {
-    width:74vw;
+    width: 74vw;
   }
-  
 
   #nav-bar, li {
-    float:none; 
+    float: none;
   }
 
   li {
-    border:solid white 5px;
+    border: solid white 5px;
     margin: 0px;
-
   }
 }
-
 /* slutet av navbar */
-/* början av "om oss" artikeln */
-span {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.omoss-container, .kontaktformular-container {
-  *border: 1px solid #d11a1a;
-  margin-bottom: 150px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.omoss, .kontaktformular-container {
-  *border: 1px solid #d11a1a;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: auto;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.bild {
-  *border: 1px solid green;
-  width: 150px;
-}
-
-.title {
-  *border: 1px solid #d1721a;
-  font-family: "Dancing Script", cursive;
-  padding-bottom: 20px;
-}
-
-.gruppett {
-  *border: 1px solid #3c1ad1;
-  width: 400px;
-  padding: 20px;
-}
-
-/* slutet av "om oss" artikeln */

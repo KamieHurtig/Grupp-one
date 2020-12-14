@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Början av navbar /sandra */
+/* Början av header + navbar /sandra */
 header {
   *border: 1px solid red;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945), white), url("Bilder/nice-christmas-packages-white-table.jpg");
@@ -81,7 +81,7 @@ li a:hover:not(.active) {
     margin-bottom: 40px;
     width: 100vw;
     height: 330px;
-    margin-bottom: 450px;
+    margin-bottom: 50vh;
   }
 
   nav, .loggain, .cart {
@@ -142,12 +142,16 @@ span {
 }
 
 /* slutet av "om oss" artikeln */
+
+/* början av styling av cards/items */
+
 .card {
-  border: red solid 1px;
+  *border: red solid 1px;
   display: flex;
   justify-content: center;
   transition: 0.1s;
   flex-wrap: wrap;
+  padding-bottom: 10vh;
 }
 
 .card:hover {
@@ -155,44 +159,54 @@ span {
 }
 
 .container-item {
-  border: 1px solid #3c1ad1;
-  *border: 1px solid white;
+  *border: 1px solid #3c1ad1;
+  border: 1px solid white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  width:200px;
-  padding: 10px;
-  margin:30px;
+  width:220px;
+  padding: 20px 10px 20px;
+  margin:20px;
 }
 
 .card-img {
-  height: 10rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
+  margin-bottom:10px;
 }
 
 .card-p {
-  border: lightgreen 3 px solid;
-  width: 160px;
+  *border: rgb(243, 9, 192) 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:0.8rem;
+  width: 175px;
+  height:95px;
+  margin-left:10px;
+  margin-bottom: 25px;
+  text-align:left;
 }
 
 .buy-btn {
   background-color: #2ea44f;
   color: white;
   padding: 10px;
-  width: 100%;
-  border-radius: 5px;
+  width: 60%;
+  border-radius: 25px;
   font-weight: bold;
-  margin-bottom: 0;
-  position: relative;
   border: none;
 }
 .buy-btn:hover {
-  background-color: white;
-  color: black;
+  background-color: rgb(18, 129, 23);
 }
 
 .pris {
   color: #c5004a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.2rem;
+  margin-bottom:10px;
 }
+
+/* slutet av styling av cards/items i main  */
+
 
 .loggain {
   float: right;
@@ -218,13 +232,7 @@ span {
   background-color: white;
 }
 
-@media (max-width: 780px) {
-  .card {
-    display: grid;
-    grid-template-areas: "card1" "card2" "card3" "card4";
-    grid-gap: 10px;
-  }
-}
+
 * {
   margin: 0;
   padding: 0;
