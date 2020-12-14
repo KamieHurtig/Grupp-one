@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: center;
   height: auto;
-  margin-bottom: 60px;
+  margin-bottom: 6vh;
 }
 
 h1 {
@@ -76,12 +76,12 @@ li a:hover:not(.active) {
   float: right;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 650px) {
   header {
     margin-bottom: 40px;
     width: 100vw;
-    height: 330px;
-    margin-bottom: 50vh;
+    height: 25vh;
+    margin-bottom: 60vh;
   }
 
   nav, .loggain, .cart {
