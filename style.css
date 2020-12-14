@@ -80,12 +80,14 @@ li a:hover:not(.active) {
   header {
     margin-bottom: 40px;
     width: 100vw;
-    height: 25vh;
-    margin-bottom: 60vh;
+    height: 35vh;
+    margin-bottom: 55vh;
+
   }
 
   nav, .loggain, .cart {
     float: none;
+    
   }
 
   .cart {

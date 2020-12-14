@@ -1,3 +1,4 @@
+/* Början av header + navbar /sandra */
 header {
   *border: 1px solid red;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(231, 23, 23, 0), rgba(255, 255, 255, 0.945), white), url("Bilder/nice-christmas-packages-white-table.jpg");
@@ -78,12 +79,14 @@ li a:hover:not(.active) {
   header {
     margin-bottom: 40px;
     width: 100vw;
-    height: 25vh;
-    margin-bottom: 60vh;
+    height: 35vh;
+    margin-bottom: 55vh;
+
   }
 
   nav, .loggain, .cart {
     float: none;
+    
   }
 
   .cart {
