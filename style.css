@@ -207,7 +207,7 @@ span {
 
 /* slutet av styling av cards/items i main  */
 
-
+/* början av stylingen till loggain-knappen  */
 .loggain {
   float: right;
   background-color: #2ea44f;
@@ -231,6 +231,7 @@ span {
   color: black;
   background-color: white;
 }
+/* slutet av stylingen till loggain-knappen  */
 
 
 * {
