@@ -42,16 +42,47 @@
           </ul>
 
               <button class="loggain" type="button"
-              onclick="document.getElementById('loginDiv').style.display='block'"><a href="loggain.html" style="text-decoration: none">
+              onclick="document.getElementById('loginDiv').style.display='block'">
                   <i class="fas fa-user-plus"></i><span> LOGGA IN </span>
-                </a>
               </button>
       </nav>
 
 
     </header>
     <!-- Admin login section-->
-    
+    <div id="loginDiv" class="loginDiv">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        id="username"
+        required
+      />
+      <label for="password"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        id="password"
+        required
+      />
+      <button type="submit" onclick="checkFunction()">Login</button>
+    </div>
+
+    <div id="card-update-div" class="card-update-div" style="width: auto">
+      <h2>Administraion Card edit page</h2>
+      <fieldset>
+        <legend>Insert Card info</legend>
+        <input id="cardKey" type="text" placeholder="Enter title...." />
+        <input id="cardInput" type="text" placeholder="Enter Value...." />
+        <button type="button" id="btnInsert">Insert Data</button>
+      </fieldset>
+      <fieldset>
+        <label> You entered </label>
+        <div class="cardOutput"></div>
+      </fieldset>
+      </div>
 
 
     <!-- Här Börjar Card -->
@@ -260,21 +291,24 @@
     <footer>
       <div class="design">
         <div class="content">
+
           <section class="section">
             <h2 class="footer-h2">Företag</h2>
-            <a href="#">Hem</a>
-            <a href="#">Om oss</a>
+            <a href="index.html">Hem</a>
+            <a href="omoss.html">Om oss</a>
             <a href="kontakt.html">Kontakt</a> 
-            <a href="#">Produkter</a>
+            <a href="index.html">Produkter</a>
           </section>
-          <section class="section">
+
+          <section class="section-popular">
             <h2 class="footer-h2">Populära Produkter</h2>
             <a href="#">Julgran</a>
             <a href="#">Julstjärna</a>
             <a href="#">Julkrans</a>
             <a href="#">Juldekoration</a>
           </section>
-          <section class="section nyhetsbrev">
+
+          <section class="section-nyhetsbrev">
             <h2 class="footer-h2">Nyhetsbrev och Rabatter</h2>
             <form action="">
               <input
@@ -292,7 +326,9 @@
               <i class="fab fa-twitter"></i>
             </div>
           </section>
+
         </div>
+
         <div class="notice">
           &copy; numerouno.se | Designed by <strong>Numero Uno</strong>
         </div>

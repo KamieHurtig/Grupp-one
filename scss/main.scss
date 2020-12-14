@@ -7,7 +7,15 @@
 @import "kontakt.scss";
 @import "footer.scss";
 
-* början av styling av cards/items */
+
+body {
+  display: flex;
+  place-content: end;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* början av styling av cards/items */
 
 .card {
   *border: red solid 1px;

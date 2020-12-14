@@ -247,34 +247,37 @@ body {
   height: 100vh;
 }
 
-footer {
+
+/* början av Footer styling  */
+
+.content{
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 24px;
   color: #ffff;
-}
-
-footer .design {
+  width: 100%;
   background-color: rgba(41, 71, 53, 0.863);
-  padding: 16px;
-  padding-top: 48px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
-footer .content {
-  max-width: 1080px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
+
+.footer-h2 {
+  font-size: 1.3rem;
+  padding:30px 0px;
+  color:rgb(243, 243, 243);
 }
 
-footer .footer-h2 {
-  font-size: 21px;
-  padding-block: 16px;
+.section, .section-popular, .section-nyhetsbrev {
+  margin:30px;
+  width:300px;
 }
 
 footer .content a {
   text-decoration: none;
+  padding: 15px 0px; 
   display: block;
-  padding-block: 12px;
   color: #ffff;
   opacity: 0.65;
 }
@@ -285,30 +288,22 @@ footer .content a:hover {
   font-size: 18px;
 }
 
-footer input {
+#email{
+  margin-bottom: 20px;
+  }
+
+footer input{
   border-style: solid;
   width: 100%;
   line-height: 24px;
   padding: 12px 16px;
   font-size: 1rem;
-  margin-block: 8px;
   border-radius: 8px;
   border-width: 2px;
 }
 
-@media (max-width: 331px) {
-  footer input {
-    font-size: 10px;
-    border-style: solid;
-    width: 100%;
-    line-height: 12px;
-    padding: 6px 8px;
-    margin-block: 4px;
-    border-radius: 4px;
-    border-width: 1px;
-    float: none;
-  }
-}
+
+
 footer input[type=email] {
   background-color: rgba(252, 252, 252, 0.486);
   color: #375037;
@@ -347,12 +342,16 @@ footer .social i:hover {
 }
 
 footer .notice {
-  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 0px;
   text-align: center;
   color: rgba(255, 255, 255, 0.479);
   font-size: 1rem;
+  width:100%;
+  background-color: rgba(26, 26, 26, 0.863);
 }
 
+/* Här börjar logga-in styling  */
 .loginDiv,
 .card-update-div,
 .creating-card {
