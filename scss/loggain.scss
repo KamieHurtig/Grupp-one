@@ -1,5 +1,6 @@
 .loginDiv,
-.card-update-div {
+.card-update-div,
+.creating-card {
   display: none;
 }
 
@@ -13,7 +14,7 @@
   border: none;
   width: 150px;
   height: 45px;
-  margin-top:3px;
+  margin-top: 3px;
 }
 
 .loggain:hover {
