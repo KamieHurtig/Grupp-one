@@ -108,7 +108,7 @@ li a:hover:not(.active) {
 /* Början loggain styling på index.html*/
 
 nav .loggain {
-  background-color: green;
+  background-color: rgb(84, 170, 84);
   float: right;
   padding: 10px;
   width: 100%;
@@ -116,21 +116,20 @@ nav .loggain {
   border: none;
   width: 150px;
   height: 45px;
-  margin-top: 3px;
-}
+  margin: 3px;
+  text-decoration: none;
 
-nav .loggain:hover {
-  background-color: green;
 }
 
 nav .loggain a {
-  background-color: green;
   text-decoration: none;
+  color:white;
 }
 
-nav .loggain a:hover {
+nav .loggain a:hover a:visited {
   background-color: green;
   color:white;
+  text-decoration: none;
 
 }
 
