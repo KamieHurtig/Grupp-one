@@ -6,41 +6,46 @@
     <title>Varukorg</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-   
+   <script src="momo.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Varukorg</h1>
-            <ul id="nav-bar">
-                <li> <a href="index.html">HEM</a></li>
-                <li> <a href="omoss.html">OM OSS</a></li>
-                <li> <a href="kontakt.html">KONTAKT</a></li>
-                <li style="float:right">
-                    <a href="cart.html" class="active"> 
-                    <i class="fas fa-shopping-basket"></i> VARUKORG  <span>( 0 )</span>
-                    
-                   </a>       
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header>        
+    <nav>
+      <h1>Shopping list</h1>
+      <div class="nav-container">
+      <ul id="nav-bar">
+        <li><a href="index.html">HEM</a></li>
+        <li> <a href="kontakt.html">KONTAKT</a></li>
+        <li class="cart active" style="float: right">
+          <a href="cart.html">
+            <i class="fas fa-shopping-basket">
+            </i> VARUKORG <span>( 0 )</span>
+              </a> 
+        </li>
+      </ul>
+  </nav>
+
+
+</header>
 
     <div class="products-container">
         <div class="product-header">
-            <h5 class="product-title">Vara</h5>
-            <h5 class="price">Pris</h5>
-            <h5 class="quantity">Antal</h5>
-            <h5 class="total">Totalsumma</h5>
+            <h4>Kassa</h4>
+            
+
         </div>
         <div class="products">
 
         </div>
     </div>
+
+
+
+
 
     <!-- start footer -->
     <footer>
@@ -90,7 +95,6 @@
       </div>
     </footer>
     
-    <script src="main.js"></script>
 
 </body>
 </html>
